@@ -1,0 +1,30 @@
+<?php
+  if($_request) {
+  $login = $_request["login"];
+  $pass = $_request["pass"];
+  
+  echo ('Wellcome');
+  echo ($login." con pass ".$pass);
+} else {
+  echo ("Rellena el formulario");
+}
+
+?>
+
+
+<!doctype html>
+<html lang="es">
+<head>
+  <title>Validar formulario</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+<form action="formulario.html" method="post">
+loguin: <input type="text" name="login" /><br /><br />
+pass: <input type="password" name="pass" /><br /><br />
+<input type="submit" />
+</form>
+
+</body>
+</html>
+
