@@ -26,6 +26,7 @@
     //$foto = $_REQUEST['foto'];
     $foto = "-";
     $observaciones = $_REQUEST['observaciones'];
+    $enviar = $_REQUEST['enviar'];
     
   //errores
     $errores = "";
@@ -136,7 +137,7 @@
                      <option>Centro</option>
                  </select></td></tr>
          <tr><td>Dirección:</td><td><input type="text" name="direccion" /></td></tr>
-         <?php if (isset($_REQUEST['enviar'])&&($error[2]!=="")) { echo "<tr><td colspan='2'>$error[2]</td></tr>"; } ?>
+         <?php if (isset($enviar)&&($error[2]!=="")) { echo "<tr><td colspan='2'>$error[2]</td></tr>"; } ?>
          <tr><td>Número de dormitorios </td>
              <td><input type="radio" name="numDorm" value="1" />1
              <input type="radio" name="numDorm" value="2" />2
